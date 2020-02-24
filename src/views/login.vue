@@ -150,8 +150,8 @@ export default {
       color: #d3dce6;
     }
     .el-input__inner {
-      color: #d3dce6;
-      background-color: #4f6f7f;
+      color: #4a5257;
+    //   background-color: #4f6f7f;
       border: 1px solid #304a57;
     }
     .form_item {
@@ -168,9 +168,9 @@ export default {
       color: #d3dce6;
     }
     .el-input__inner {
-      color: #d3dce6;
-      background-color: #0c647d;
-      border: 1px solid #4996ac;
+      color: #4a5257;
+    //   background-color: #5D88C7;
+      border: 1px solid rgb(54, 99, 167);
     }
     .form_item {
       padding-left: 20px;
@@ -198,7 +198,7 @@ export default {
     font-weight: 500;
     user-select: none;
     font-size: 14px;
-    background: #2b5066;
+    // background: #2b5066;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(220, 223, 230);
@@ -208,12 +208,13 @@ export default {
     transition: all 0.1s ease 0s;
   }
   .btn_item:hover {
-    background:#5489a9;
+    background:#b7d9f1;
     border-color: rgb(220, 223, 230);
+    color: #304a57
   }
   .btn_item:active {
-    background: #5489a9;
-    border-color:#5291b8;
+    // background: #b9daee;
+    border-color:rgb(47, 94, 122);
   }
 }
 </style>
