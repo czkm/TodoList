@@ -24,13 +24,6 @@ export async function loginUser (params) {
   })
   return response
 }
-export async function signUser (params) {
-  let headers = {}
-  let response = await post('/user/sign', params, {
-    headers: headers
-  })
-  return response
-}
 
 // // 获取字段表信息
 // export async function deleteByidExample (params) {

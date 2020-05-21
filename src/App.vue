@@ -16,6 +16,7 @@ html,
 body,
 #app {
   height: 100%;
+  background-image: url(./assets/login_bg.jpg);
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

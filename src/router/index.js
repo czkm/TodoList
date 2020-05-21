@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import UserApi from '@/components/UserApi'
 import EventApi from '@/components/EventApi'
 import Login from '@/views/login'
+import Main from '@/views/main'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/main',
+      name: 'Main',
+      component: Main
     }
   ]
 })

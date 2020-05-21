@@ -1,8 +1,8 @@
 import axios from 'axios'
 import qs from 'qs'
 import { Message } from 'element-ui'
-
 export const baseURL = 'http://127.0.0.1:3000/'
+// export const baseURL = 'http://adminapi.stoneboss.vip/api'
 
 // create an axios instance
 const service = axios.create({

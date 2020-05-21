@@ -1,0 +1,213 @@
+.btn {
+  --hue: #11e6e6;
+  --hueDark: rgb(20, 144, 167);
+
+  --ease-in-duration: 0.25s;
+  --ease-in-exponential: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  --ease-out-duration: 0.65s;
+  --ease-out-delay: var(--ease-in-duration);
+  --ease-out-exponential: cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+  background-color: var(--hue);
+  border: 1px solid var(--hue);
+  outline: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: 1.25s;
+
+  &:hover {
+    background: var(--hue);
+  }
+
+  // &-primary {
+  //   --hue: 171;
+  // }
+
+  &-ghost {
+    color: var(--hue);
+    background-color: transparent;
+    border-color: var(--hue);
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &-border-stroke {
+    border-color: var(--hueDark);
+
+    .btn-borders {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      .border-top {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        background: var(--hueDark);
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+
+      .border-right {
+        position: absolute;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background: var(--hueDark);
+        transform: scaleY(0);
+        transform-origin: bottom;
+      }
+
+      .border-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: var(--hueDark);
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+
+      .border-left {
+        position: absolute;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: var(--hueDark);
+        transform: scaleY(0);
+        transform-origin: bottom;
+      }
+
+      // when unhover, ease-out left, bottom; ease-in right, top
+
+      .border-left {
+        transition: var(--ease-out-duration) var(--ease-out-delay) var(--ease-out-exponential);
+      }
+
+      .border-bottom {
+        transition: var(--ease-out-duration) var(--ease-out-delay) var(--ease-out-exponential);
+      }
+
+      .border-right {
+        transition: var(--ease-in-duration) var(--ease-in-exponential);
+      }
+
+      .border-top {
+        transition: var(--ease-in-duration) var(--ease-in-exponential);
+      }
+    }
+
+    &:hover {
+      color: var(--hueDark);
+      background: transparent;
+
+      .border-top,
+      .border-bottom {
+        transform: scaleX(1);
+      }
+
+      .border-left,
+      .border-right {
+        transform: scaleY(1);
+      }
+
+      // when hover, ease-in left, bottom; ease-out right, top
+
+      .border-left {
+        transition: var(--ease-in-duration) var(--ease-in-exponential);
+      }
+
+      .border-bottom {
+        transition: var(--ease-in-duration) var(--ease-in-exponential);
+      }
+
+      .border-right {
+        transition: var(--ease-out-duration) var(--ease-out-delay) var(--ease-out-exponential);
+      }
+
+      .border-top {
+        transition: var(--ease-out-duration) var(--ease-out-delay) var(--ease-out-exponential);
+      }
+    }
+  }
+
+  &-text-float-up {
+    &::after {
+      position: absolute;
+      content: attr(data-text);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(35%);
+      transition: 0.25s ease-out;
+    }
+
+    // when hover, ease-in top-text; ease-out bottom-text
+
+    .btn-text {
+      display: block;
+      transition: 0.75s 0.1s var(--ease-out-exponential);
+    }
+
+    &:hover {
+      // when hover, ease-in bottom-text; ease-out top-text
+
+      .btn-text {
+        opacity: 0;
+        transform: translateY(-25%);
+        transition: 0.25s ease-out;
+      }
+
+      &::after {
+        opacity: 1;
+        transform: translateY(0);
+        transition: 0.75s 0.1s var(--ease-out-exponential);
+      }
+    }
+  }
+}
+
+.Alist {
+  --fill-color: #0e2842;
+  position: relative;
+  display: block;
+  
+  font-family: Raleway, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(90deg,
+      var(--fill-color) 0%,
+      var(--fill-color) 100%);
+  background-size: 0;
+  background-position: left;
+  background-repeat: no-repeat;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.5s linear;
+
+  &:hover {
+    cursor: pointer;
+    background-size: 100%;
+  }
+}

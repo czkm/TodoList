@@ -31,7 +31,7 @@
   </div>
 </template>
 <script>
-import { setUser, getUser, signUser, loginUser } from '../api/user'
+import { setUser, getUser, loginUser } from '../api/user'
 
 export default {
   name: 'HelloWorld',
@@ -63,15 +63,15 @@ export default {
         console.log(res)
       })
     },
-    sign () {
-      let parms = {
-        user_name: this.user_name,
-        user_password: this.user_password
-      }
-      signUser(parms).then(res => {
-        console.log(res)
-      })
-    },
+    // sign () {
+    //   let parms = {
+    //     user_name: this.user_name,
+    //     user_password: this.user_password
+    //   }
+    //   signUser(parms).then(res => {
+    //     console.log(res)
+    //   })
+    // },
     login () {
       let parms = {
         user_name: this.user_name,

@@ -12,8 +12,10 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
+    
   },
   "dependencies": {
+    "@antv/data-set": "^0.11.1",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "element-ui": "^2.13.0",
@@ -21,6 +23,7 @@
     "mongoose": "^5.9.1",
     "node-sass": "^4.13.1",
     "qs": "^6.9.1",
+    "viser-vue": "^2.4.8",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -78,6 +81,7 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
+    "vuepress": "^1.5.0",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
