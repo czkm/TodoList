@@ -2,7 +2,7 @@
   <el-container style="height: 100%">
     <el-header>
       <el-row :gutter="20" class="el_row_padding">
-        <el-col :span="4">
+        <el-col :span="10">
           <div class="toggle_btn" @click="changeAside">
             <i
               style="font-size:28px;color:#243E5A"
@@ -13,10 +13,9 @@
           <div class="toggle_btn" style="left:100px" @click="fullScreen">
             <i style="font-size:28px;transform: rotate(45deg);" class="el-icon-rank"></i>
           </div>
+          <div class="Alist" >ToDoList</div>
         </el-col>
-        <el-col :span="8">
-          <div class="Alist">ToDoList</div>
-        </el-col>
+
       </el-row>
     </el-header>
     <el-container>
@@ -478,6 +477,8 @@ export default {
   -webkit-transition: width 0.3s linear; /* Safari */
 }
 .toggle_btn {
+    z-index: 2;
+
   width: 28px;
   height: 28px;
   padding-right: 30px;
