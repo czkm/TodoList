@@ -1,5 +1,9 @@
 # todo_list
 
+
+2020-05-23 23.00.19.gif
+![](https://github.com/czkm/TodoList/blob/master/2020-05-23%2023.00.19.gif)
+
 > A Vue.js project
 
 ## Build Setup
