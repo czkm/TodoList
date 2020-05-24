@@ -57,6 +57,7 @@ export default {
       })
       this.chartData = dv.rows
     }
+
   }
 }
 

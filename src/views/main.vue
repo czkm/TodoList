@@ -2,7 +2,7 @@
   <el-container style="height: 100%">
     <el-header>
       <el-row :gutter="20" class="el_row_padding">
-        <el-col :span="10">
+        <el-col :span="18">
           <div class="toggle_btn" @click="changeAside">
             <i
               style="font-size:28px;color:#243E5A"
@@ -13,7 +13,7 @@
           <div class="toggle_btn" style="left:100px" @click="fullScreen">
             <i style="font-size:28px;transform: rotate(45deg);" class="el-icon-rank"></i>
           </div>
-          <div class="Alist" >ToDoList</div>
+          <div style='float:right' class="Alist" @click='controller'>ToDoList</div>
         </el-col>
 
       </el-row>
@@ -255,14 +255,16 @@
       <el-drawer
         :modal="false"
         show-close
-        size="30%"
+        size="35%"
         title="aside"
         :visible.sync="iconRotate"
         direction="ltr"
         :with-header="false"
       >
         <div style="padding:20px 0;margin-left:-30px">
-          <pieChart :chart_config="chart_config" />
+                    <clock/>
+
+          <pieChart :chart_config="chart_config" ref="Chart"/>
           <div class="viewClass"></div>
         </div>
 
@@ -275,6 +277,7 @@
 <script>
 import { setEvent, getEvent, updataEvent, deletedEvent } from '../api/event'
 import pieChart from '../components/pieChart'
+import clock from '../components/FlipClock'
 
 export default {
   data () {
@@ -294,7 +297,8 @@ export default {
     }
   },
   components: {
-    pieChart
+    pieChart,
+    clock
   },
   mounted () {
     this.getAlllist()
@@ -314,12 +318,15 @@ export default {
     }
   },
   methods: {
+    controller () { // 跳转页面
+      console.log('1')
+    },
     getAlllist () {
       getEvent().then(res => {
         if (res.code === 0) {
           this.todoArry = res.data
           this.chartComputed()
-          this.$message.success(res.message)
+          // this.$message.success(res.message)
         } else {
           this.$message.error('查询错误')
         }
@@ -348,12 +355,16 @@ export default {
       this.iconRotate === true
         ? (this.Aside_width = '0%')
         : (this.Aside_width = '10%')
+      this.chartComputed()
+      this.$nextTick(() => { // 数据实时加载
+        this.$refs.Chart.Data_set(this.chart_config)
+      })
     },
     AddType (flag) {
       this.is_add = flag
     },
     AddType_confirm (flag) {
-      console.log(flag)
+      // console.log(flag)
       let parms = {
         user_id: this.user_id,
         event_title: this.add_input,
