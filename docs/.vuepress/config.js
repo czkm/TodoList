@@ -1,4 +1,5 @@
 module.exports = {
+    base:'/TodoList/',
     title: 'TODOLIST', // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
     description: 'todolist', // meta 中的描述文字，用于SEO
     // 注入到当前页面的 HTML <head> 中的标签
@@ -23,7 +24,7 @@ module.exports = {
             //     ]
             // },
             { text: 'about', link: '/pages/folder1/test3.md' },
-            { text: 'Github', link: 'https://github.com/czkm/TodoList/tree/master' },
+            { text: 'Github', link: 'https://github.com/czkm/TodoList' },
         ],
         //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
         sidebar: {
