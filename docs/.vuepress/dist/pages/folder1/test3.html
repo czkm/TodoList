@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Node构建 | TODOLIST</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/bg.png">
+    <meta name="description" content="todolist">
+    <link rel="preload" href="/assets/css/0.styles.a6f6b3f7.css" as="style"><link rel="preload" href="/assets/js/app.c308999d.js" as="script"><link rel="preload" href="/assets/js/2.5a70d5d7.js" as="script"><link rel="preload" href="/assets/js/9.6ca0d635.js" as="script"><link rel="prefetch" href="/assets/js/3.3c315e87.js"><link rel="prefetch" href="/assets/js/4.3d9184ab.js"><link rel="prefetch" href="/assets/js/5.7814418d.js"><link rel="prefetch" href="/assets/js/6.709a9068.js"><link rel="prefetch" href="/assets/js/7.a2b54b2a.js"><link rel="prefetch" href="/assets/js/8.59f34576.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a6f6b3f7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/bg.png" alt="TODOLIST" class="logo"> <span class="site-name can-hide">TODOLIST</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link router-link-exact-active router-link-active">
+  about
+</a></div><div class="nav-item"><a href="https://github.com/czkm/TodoList/tree/master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link router-link-exact-active router-link-active">
+  about
+</a></div><div class="nav-item"><a href="https://github.com/czkm/TodoList/tree/master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>写在前面</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/folder1/demo.html" class="sidebar-link">demo</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端构建</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/folder1/test2.html" class="sidebar-link">前端构建</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Node构建</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/folder1/test3.html" class="active sidebar-link">Node构建</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/folder1/test3.html#后端基本环境配置" class="sidebar-link">后端基本环境配置</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test3.html#数据模型的构建" class="sidebar-link">数据模型的构建</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test3.html#建立路由接口" class="sidebar-link">建立路由接口</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test3.html#建立controller来控制事务-增删改查" class="sidebar-link">建立controller来控制事务(增删改查)</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test3.html#入口文件的构建" class="sidebar-link">入口文件的构建</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="node构建"><a href="#node构建" class="header-anchor">#</a> Node构建</h1> <h2 id="后端基本环境配置"><a href="#后端基本环境配置" class="header-anchor">#</a> 后端基本环境配置</h2> <p>通过npm安装koa、mongoose、body-parser模块</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install koa body-parser mongoose --save
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>数据库链接app.js</li></ul> <div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> Koa <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Koa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+mongoose<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string">'mongodb://localhost/todolist'</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span> useNewUrlParser<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'Failed to connect to database'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'数据库链接成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>通过运行<code>node app.js</code>过浏览器访问localhost:3000就可以看到数据库已经链接</p> <h2 id="数据模型的构建"><a href="#数据模型的构建" class="header-anchor">#</a> 数据模型的构建</h2> <p>数据模型就是在数据库构建的表中，所需要的数据和数据的对应类型。</p> <p>在项目根目录建立一个db文件夹，每个模型都是由一个Schema生产，举个例子在db文件夹中创建一个user.js文件,内容如下</p> <div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//  name: {例子</span>
+<span class="token comment">//      type: String,</span>
+<span class="token comment">//      required: true, // 表示该字段是必需的</span>
+<span class="token comment">//      unique: true // 表示该字段唯一</span>
+<span class="token comment">//  },</span>
+
+<span class="token comment">//引入mongoose模块</span>
+<span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> Schema <span class="token operator">=</span> mongoose<span class="token punctuation">.</span>Schema
+<span class="token keyword">const</span> userSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  user_id<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">//用户id</span>
+    type<span class="token operator">:</span> String
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  user_name<span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">//用户名称</span>
+    type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    required<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  user_password<span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">//用户密码</span>
+    type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    required<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  user_event<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> Array<span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'001'</span><span class="token punctuation">]</span> <span class="token comment">//可以给与默认值</span>
+    <span class="token comment">// 字符串数组类型</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+<span class="token comment">//这里mongoose.Schema最好要写上第二个参数</span>
+<span class="token comment">//明确指定到数据库中的哪个表取数据，我这里写了user，目的就是为了以后操作数据要去user表中。</span>
+  timestamps<span class="token operator">:</span> <span class="token punctuation">{</span> createdAt<span class="token operator">:</span> <span class="token string">'created'</span><span class="token punctuation">,</span> updatedAt<span class="token operator">:</span> <span class="token string">'updated'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  collection<span class="token operator">:</span> <span class="token string">'user'</span><span class="token punctuation">,</span>
+  versionKey<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// 不需要 __v 字段，默认是加上的</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//导出model模块</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h2 id="建立路由接口"><a href="#建立路由接口" class="header-anchor">#</a> 建立路由接口</h2> <p>在项目根目录创建一个router文件夹，文件夹中创建一个user_router.js文件,内容如下,分别为对用户的增删改查路由。项目模块较多，对应的路由也很多。如果一个个的去注册，效率太低。这里用node的fs模块去遍历读取routes下的所有路由文件，统一注册，可以直接在index.js中对所有的router进行引用。</p> <div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//index.js</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span> <span class="token comment">//引入fs读取文件</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token parameter">app</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  fs<span class="token punctuation">.</span><span class="token function">readdirSync</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">file</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>file <span class="token operator">===</span> <span class="token string">'index.js'</span> <span class="token operator">||</span> file <span class="token operator">===</span> <span class="token string">'.DS_Store'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> route <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">./</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>file<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>route<span class="token punctuation">.</span><span class="token function">routes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>route<span class="token punctuation">.</span><span class="token function">allowedMethods</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">//统一注册路由</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//user_controller.js</span>
+<span class="token comment">// 引入路由模块并实例化</span>
+<span class="token keyword">const</span> Router <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-router'</span><span class="token punctuation">)</span> <span class="token comment">//引入koa路由实例</span>
+<span class="token comment">// const router = new Router();</span>
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Router</span><span class="token punctuation">(</span><span class="token punctuation">{</span> prefix<span class="token operator">:</span> <span class="token string">'/user'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">//设置路由访问路径</span>
+<span class="token comment">// 导如对应的控制器</span>
+<span class="token keyword">const</span> user_controller <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../controller/user_controller'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 为控制器的方法定义请求路径和请求方式</span>
+router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/set'</span><span class="token punctuation">,</span> user_controller<span class="token punctuation">.</span>set_User<span class="token punctuation">)</span> <span class="token comment">//保存用户</span>
+router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/get'</span><span class="token punctuation">,</span> user_controller<span class="token punctuation">.</span>get_User<span class="token punctuation">)</span> <span class="token comment">//查询用户</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> router
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="建立controller来控制事务-增删改查"><a href="#建立controller来控制事务-增删改查" class="header-anchor">#</a> 建立controller来控制事务(增删改查)</h2> <p>增删改查示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const User_col = require('../db/user')
+
+5ca3894ee78a732a245e3bb8为id
+//查询所有数据
+User_col.find(function (err, ret) {}
+
+//根据条件查询数据
+User_col.find({
+  _id: '5ca3894ee78a732a245e3bb8',
+  username: 'czk'
+}, function (err, ret) {}
+
+//根据条件查询数据的第一个
+User_col.findOne({})
+//根据id值查询数据
+User_col.findById('5ca3894ee78a732a245e3bb8', function (err, ret) {})
+
+改 更新
+User_col.findByIdAndUpdate('5ca3894ee78a732a245e3bb8', {})
+
+删
+User_col.findByIdAndDelete('5ca3894ee78a732a245e3bb8', function (err, ret) {})
+
+增
+let admin = {
+  username: 'czk',
+  password: '123',
+}
+User_col.create(admin)
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>在项目根目录建立一个controller文件夹，在controller文件夹中创建一个user_controller.js文件,内容如下</p> <div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 引入刚才定义的表</span>
+<span class="token keyword">const</span> User_col <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../db/user'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// get 请求返回所有数据</span>
+<span class="token keyword">const</span> <span class="token function-variable function">get_User</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> User_col<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  ctx<span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token number">200</span>
+  ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token punctuation">{</span>
+    data<span class="token operator">:</span> result
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// post 带一个 msg 参数，并插入数据库</span>
+<span class="token keyword">const</span> <span class="token function-variable function">set_User</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> req <span class="token operator">=</span> ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>body
+  ctx<span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token number">200</span>
+
+  ctx<span class="token punctuation">.</span><span class="token function">verifyParams</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    user_name<span class="token operator">:</span> <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span> required<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//如果required为true则入参为必填项</span>
+    user_password<span class="token operator">:</span> <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token string">'string'</span><span class="token punctuation">,</span> required<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> User_col<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>
+  <span class="token punctuation">{</span> user_name<span class="token operator">:</span> req<span class="token punctuation">.</span>user_name<span class="token punctuation">,</span> user_password<span class="token operator">:</span> req<span class="token punctuation">.</span>user_password <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token comment">// const result = await User_col.create({ req });</span>
+  ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token punctuation">{</span>
+    data<span class="token operator">:</span> result
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 暴露出这两个方法，在路由中使用</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  set_User<span class="token punctuation">,</span>
+  get_User
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h2 id="入口文件的构建"><a href="#入口文件的构建" class="header-anchor">#</a> 入口文件的构建</h2> <p>项目根目录的app.js，是后端项目的入口文件,内容如下</p> <div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> Koa <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> parameter <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-parameter'</span><span class="token punctuation">)</span> <span class="token comment">// 参数校验</span>
+<span class="token keyword">const</span> error <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-json-error'</span><span class="token punctuation">)</span> <span class="token comment">// 错误抓取</span>
+<span class="token keyword">const</span> cors <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa2-cors'</span><span class="token punctuation">)</span> <span class="token comment">//koa前端跨域，解决option跨域</span>
+<span class="token keyword">const</span> BodyParser <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-bodyparser'</span><span class="token punctuation">)</span> <span class="token comment">// 获取json数据</span>
+<span class="token keyword">const</span> routing <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./router/index'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./config'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Koa</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+mongoose<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string">'mongodb://localhost/todolist'</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span> useNewUrlParser<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'Failed to connect to database'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'数据库链接成功'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">cors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">BodyParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 使用koa-bodyparser：</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">parameter</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 参数校验</span>
+
+<span class="token function">routing</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span> <span class="token comment">// 路由处理</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function-variable function">postFormat</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> <span class="token punctuation">{</span> stack<span class="token punctuation">,</span> <span class="token operator">...</span>rest <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+  config<span class="token punctuation">.</span>environment <span class="token operator">==</span> <span class="token string">'master'</span> <span class="token operator">?</span> rest <span class="token operator">:</span> <span class="token punctuation">{</span> stack<span class="token punctuation">,</span> <span class="token operator">...</span>rest <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'程序启动在3000端口了'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>详细的界面交互和逻辑可以上<a href="https://github.com/czkm/TodoList/tree/master" target="_blank" rel="noopener noreferrer">github<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>上看看</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/folder1/test2.html" class="prev">
+        前端构建
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c308999d.js" defer></script><script src="/assets/js/2.5a70d5d7.js" defer></script><script src="/assets/js/9.6ca0d635.js" defer></script>
+  </body>
+</html>

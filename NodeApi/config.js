@@ -1,4 +1,4 @@
-//config/config.js
+// config/config.js
 module.exports = {
-    environment: 'dev'
-  }
+  environment: 'dev'
+}

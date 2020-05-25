@@ -1,10 +1,12 @@
-# todo_list
+# TODOLIST
 
 > A Vue.js project
 
 ## Build Setup
 
 ``` bash
+# 前端工程
+
 # install dependencies
 npm install
 
@@ -27,4 +29,18 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+``` bash
+# 后端api
+
+# install dependencies
+cd NodeApi
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:3000
+npm run hot
+
+# run all tests
+npm test
+```
