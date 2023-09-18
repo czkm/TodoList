@@ -1,12 +1,11 @@
 # TODOLIST
 
-![登陆页面](https://user-gold-cdn.xitu.io/2020/5/23/172421dbafe61ef8?w=2876&h=1568&f=png&s=1066096)
+![登陆页面](https://cdn.jsdelivr.net/gh/czkm/img-folder@master/TodoList/todo1_oobrmu_.jpeg)
 
+![todo2_w0e38s_.jpeg](https://cdn.jsdelivr.net/gh/czkm/img-folder@master/TodoList/todo2_w0e38s_.jpeg)
 
-![](https://user-gold-cdn.xitu.io/2020/5/24/17244aec187bef6f?w=2880&h=1584&f=png&s=2459656)
+![相关操作](https://cdn.jsdelivr.net/gh/czkm/img-folder@master/TodoList/todo3_4k6imk_.jpeg)
 
-
-![相关操作](https://user-gold-cdn.xitu.io/2020/5/24/17244ae275eabad4?w=2880&h=1572&f=png&s=2980860)
 
 
 
@@ -67,6 +66,9 @@ app.listen(3000);
 ```
 通过运行`node app.js`过浏览器访问localhost:3000就可以看到数据库已经链接
 
+这里推荐使用robo3t这个mongodb可视化工具来快速的构建字典表
+
+![todo4_2yjdmr_.jpeg](https://cdn.jsdelivr.net/gh/czkm/img-folder@master/TodoList/todo4_2yjdmr_.jpeg)
 
 ### 数据模型的构建
 
